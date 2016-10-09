@@ -1,0 +1,200 @@
+@font-face {
+font-family: "CovesB";
+src: url("fonts/CovesB.otf") format("opentype");
+font-weight: normal;
+font-style: normal;
+}
+
+html {
+  background-color: #BAC3C5;
+  font-family: 'CovesB';
+  font-weight: bold;
+  text-align: center;
+}
+
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+
+
+#mainscreen {
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+  background-image: url("../images/wave.jpg");
+  background-color: #DBDED7;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#about-me {
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+#portfolio {
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+#experience {
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+#contact {
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+
+/*navigation bar*/
+.main-nav{
+Padding-top: 10px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+     color:#FF9275;
+     text-decoration:none;
+     cursor:pointer;
+}
+/*end navigatin bar*/
+
+
+#about-me-left {
+  float: left;
+  height:100%;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #FEC593;
+  position:relative;
+}
+
+#about-me-left h1 {
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 35%;
+}
+
+#myprofile {
+  width:200px;
+  height:200px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: -100px;
+  margin-left:-100px;
+}
+
+/*#abutmetext {
+  width:200px;
+  height:200px;
+  top:60%;
+  left:50%;
+  margin-top:-100px;
+  margin-left:-100px;
+
+}
+*/
+
+#about-me-right {
+  float: right;
+  height:100%;
+  width: 50%;
+  vertical-align: middle;
+
+}
+
+#portfolio-left {
+  float: left;
+  height:100%;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #CCF2F0;
+}
+
+#portfoliotext {
+  width:200px;
+  height:200px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: -100px;
+  margin-left:-100px;
+}
+
+#portfolio-right {
+  float: right;
+  height:100%;
+  width: 50%;
+  vertical-align: middle;
+}
+
+#experience-left {
+  float: left;
+  height:100%;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #FCE5CD;
+}
+
+#experience-right {
+  float: right;
+  height:100%;
+  width: 50%;
+  vertical-align: middle;
+
+}
+
+
+#contact-left {
+  float: left;
+  height:100%;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #DCDEFB;
+}
+
+#contact-right {
+  float: right;
+  height:100%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#contact-icons {
+  font-size:30px;
+  position: absolute;
+  margin-top: 30px;
+}
+
+
+/*Color Palette: #AEEBF9, #CCF2F0, #F8FCE2, #FCE5CD, #FEC593, #DCDEFB*/
+
+
+ul#contactinfo{
+  list-style-type: none;
+}
+
+
+header h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #4C4C4C;
+}
