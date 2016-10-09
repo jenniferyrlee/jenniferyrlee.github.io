@@ -6,7 +6,7 @@ font-style: normal;
 }
 
 html {
-  background-color: #BAC3C5;
+  background-color: #f6f4f7;
   font-family: 'CovesB';
   font-weight: bold;
   text-align: center;
@@ -75,7 +75,7 @@ a:hover {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #FEC593;
+  background-color: #DCDEFB;
   position:relative;
 }
 
