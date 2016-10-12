@@ -1,25 +1,40 @@
 @font-face {
-font-family: "CovesB";
-src: url("fonts/CovesB.otf") format("opentype");
+font-family: "Coco Gothic Regular";
+src: url("fonts/Coco-Gothic/Coco\ Gothic\ Regular.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
 
+
 html {
-  background-color: #f6f4f7;
-  font-family: 'CovesB';
-  font-weight: bold;
+  background-color: #003326;
+  font-family: "Coco Gothic Regular", sans-serif;
+  color: #d9d8d6;
+  font-weight: normal;
   text-align: center;
+  font-size: 15px;
 }
 
 html,body{ margin:0; padding:0; height:100%; width:100%; }
+
+
+header h1 {
+  font-size: 80px;
+  font-weight: normal;
+  color: #d9d8d6;
+}
+
+header p {
+  color: #d9d8d6;
+}
+
 
 
 #mainscreen {
   height:100%;
   width:100%;
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
-  background-image: url("../images/wave.jpg");
+  background-image: url("../images/aus.jpg");
   background-color: #DBDED7;
   background-position: bottom;
   background-size: cover;
@@ -52,18 +67,19 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 
 /*navigation bar*/
 .main-nav{
-Padding-top: 10px;
+padding-top: 10px;
 }
 
 a {
-    color: #000;
+    color: #f7f304;
     text-decoration: none;
     padding: 10px;
 }
 
 a:hover {
-     color:#FF9275;
+     color: #f7f304;
      text-decoration:none;
+     text-shadow: 2px 2px 5px #FFF;
      cursor:pointer;
 }
 /*end navigatin bar*/
@@ -75,8 +91,8 @@ a:hover {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #DCDEFB;
-  position:relative;
+  background-color: #EBEBE6;
+  position: relative;
 }
 
 #about-me-left h1 {
@@ -85,40 +101,26 @@ a:hover {
   margin-top: 35%;
 }
 
-#about-me-elements {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -155px;
-  margin-left: -130px;
-}
-
-#myprofile {
-  width:200px;
-  height:200px;
-  display: block;
-}
 
 #aboutmetext {
-  width: 150px;
-}
-
-/*#abutmetext {
   width:200px;
   height:200px;
-  top:60%;
+  top:50%;
   left:50%;
   margin-top:-100px;
   margin-left:-100px;
-
+  position:absolute;
 }
-*/
+
 
 #about-me-right {
   float: right;
   height:100%;
   width: 50%;
   vertical-align: middle;
+  background-image: url("../images/waterandclouds-dark.png");
+  background-size: cover;
+  background-position: center;
 
 }
 
@@ -128,18 +130,18 @@ a:hover {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #CCF2F0;
+  background-color: #DCE7F1;
   position: relative;
 }
 
 #portfoliotext {
-  width:150px;
-  height:50px;
+  width:200px;
+  height:200px;
   position: absolute;
   top:50%;
   left:50%;
-  margin-top: -25px;
-  margin-left:-75px;
+  margin-top: -100px;
+  margin-left:-100px;
 }
 
 #portfolio-right {
@@ -147,6 +149,9 @@ a:hover {
   height:100%;
   width: 50%;
   vertical-align: middle;
+  background-image: url("../images/walk-dark.png");
+  background-size: cover;
+  background-position: center;
 }
 
 #experience-left {
@@ -155,7 +160,18 @@ a:hover {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #FCE5CD;
+  background-color: #00C5B3;
+  position: relative;
+}
+
+#experiencetext {
+  width:200px;
+  height:200px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: -100px;
+  margin-left:-100px;
 }
 
 #experience-right {
@@ -163,7 +179,9 @@ a:hover {
   height:100%;
   width: 50%;
   vertical-align: middle;
-
+  background-image: url("../images/footprint-dark.png");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -173,8 +191,21 @@ a:hover {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #DCDEFB;
+  background-color: #FBF906;
+  position: relative;
 }
+
+
+#contactmetext {
+  width:200px;
+  height:200px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: -100px;
+  margin-left:-100px;
+}
+
 
 #contact-right {
   float: right;
@@ -184,6 +215,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../images/palmtrees-dark.png");
+  background-size: cover;
 }
 
 
@@ -194,16 +227,44 @@ a:hover {
 }
 
 
-/*Color Palette: #AEEBF9, #CCF2F0, #F8FCE2, #FCE5CD, #FEC593, #DCDEFB*/
-
+/* Wave Picture Theme: Color Palette: #AEEBF9, #CCF2F0, #F8FCE2, #FCE5CD, #FEC593, #DCDEFB*/
 
 ul#contactinfo{
   list-style-type: none;
 }
 
 
-header h1 {
-  font-size: 100px;
-  font-weight: bold;
-  color: #4C4C4C;
-}
+
+
+/*light beige/grey
+#d9d8d6
+
+Teal / green
+#009081
+
+baby grey blue
+#9db5cb
+#90a6c0
+
+dark green
+
+#003326
+darker green
+00251B
+
+Yellow
+#f7f304
+
+
+
+After overlay
+#004B35
+#00C5B3
+#DCE7F1
+#EBEBE6
+#FBF906
+
+
+Off white
+F1F1F1
+*/
