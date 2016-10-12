@@ -9,10 +9,10 @@ font-style: normal;
 html {
   background-color: #003326;
   font-family: "Coco Gothic Regular", sans-serif;
-  color: #d9d8d6;
+  color: #f7f5f2; /*#d9d8d6;*/
   font-weight: normal;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 html,body{ margin:0; padding:0; height:100%; width:100%; }
@@ -21,11 +21,13 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 header h1 {
   font-size: 80px;
   font-weight: normal;
-  color: #d9d8d6;
+  color: #f7f5f2;
 }
 
 header p {
-  color: #d9d8d6;
+  color: #f7f5f2;
+  line-height: 1.5;
+
 }
 
 
@@ -66,23 +68,73 @@ header p {
 
 
 /*navigation bar*/
-.main-nav{
-padding-top: 10px;
-}
 
-a {
-    color: #f7f304;
+.main-nav {
+    color: #fff200;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
+    display:inline-block;
 }
 
-a:hover {
-     color: #f7f304;
-     text-decoration:none;
-     text-shadow: 2px 2px 5px #FFF;
-     cursor:pointer;
+.main-nav:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s, background-color 0.5s;
 }
+
+.main-nav:hover:after {
+    width: 100%;
+    background: #fff200;
+    text-decoration:none;
+ /*    text-shadow: 2px 2px 5px #FFF;
+     cursor:pointer;*/
+}
+
 /*end navigatin bar*/
+
+
+
+
+/*Bottom navigation bar*/
+
+.second-nav {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left:25%;
+  }
+
+
+.bottom-nav {
+    color: #424242;
+    text-decoration: none;
+    padding: 7px;
+    display:inline-block;
+}
+
+
+.bottom-nav:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s, background-color 0.5s;
+}
+
+.bottom-nav:hover:after {
+    width: 100%;
+    background: #424242;
+    text-decoration:none;
+}
+
+/*End of Bottom Nav Bar*/
+
 
 
 #about-me-left {
@@ -93,12 +145,6 @@ a:hover {
   text-align: center;
   background-color: #EBEBE6;
   position: relative;
-}
-
-#about-me-left h1 {
-  vertical-align: middle;
-  text-align: center;
-  margin-top: 35%;
 }
 
 
@@ -121,8 +167,20 @@ a:hover {
   background-image: url("../images/waterandclouds-dark.png");
   background-size: cover;
   background-position: center;
+  position: relative;
 
 }
+
+#myprofile {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top:25%;
+  left:50%;
+  margin-top: -100px;
+  margin-left:-100px;
+}
+
 
 #portfolio-left {
   float: left;
@@ -149,6 +207,7 @@ a:hover {
   height:100%;
   width: 50%;
   vertical-align: middle;
+  background-color:#EBEBE6;
   background-image: url("../images/walk-dark.png");
   background-size: cover;
   background-position: center;
