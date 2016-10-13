@@ -7,12 +7,18 @@ font-style: normal;
 
 
 html {
-  background-color: #003326;
+  background-color: #FFF;
   font-family: "Coco Gothic Regular", sans-serif;
-  color: #f7f5f2; /*#d9d8d6;*/
+  color: #2F2F2F; /*#d9d8d6;*/
   font-weight: normal;
   text-align: center;
   font-size: 13px;
+  background-image: url("../images/wave.jpg");
+  background-color: #DBDED7;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 html,body{ margin:0; padding:0; height:100%; width:100%; }
@@ -21,11 +27,11 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 header h1 {
   font-size: 80px;
   font-weight: normal;
-  color: #f7f5f2;
+  color: #2F2F2F;
 }
 
 header p {
-  color: #f7f5f2;
+  color: #2F2F2F;
   line-height: 1.5;
 
 }
@@ -36,10 +42,13 @@ header p {
   height:100%;
   width:100%;
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
-  background-image: url("../images/aus.jpg");
+  /* if I want to use the wave image only for the main landing page.
+  background-image: url("../images/wave.jpg");
   background-color: #DBDED7;
   background-position: bottom;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
 }
 
 #about-me {
@@ -70,9 +79,10 @@ header p {
 /*navigation bar*/
 
 .main-nav {
-    color: #fff200;
+    color: #2F2F2F;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
+    font-weight: bold;
     display:inline-block;
 }
 
@@ -88,7 +98,7 @@ header p {
 
 .main-nav:hover:after {
     width: 100%;
-    background: #fff200;
+    background: #F7CCD6;
     text-decoration:none;
  /*    text-shadow: 2px 2px 5px #FFF;
      cursor:pointer;*/
@@ -143,7 +153,7 @@ header p {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #EBEBE6;
+  background-color: rgba(0,0,0,0.2);
   position: relative;
 }
 
@@ -164,23 +174,27 @@ header p {
   height:100%;
   width: 50%;
   vertical-align: middle;
-  background-image: url("../images/waterandclouds-dark.png");
-  background-size: cover;
-  background-position: center;
+  background-color: #FFF;
   position: relative;
-
 }
 
 #myprofile {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: absolute;
-  top:25%;
-  left:50%;
-  margin-top: -100px;
-  margin-left:-100px;
+  top:10%;
+  left:15%;
 }
 
+#about-me-right p{
+  position: absolute;
+  top: 35%;
+  left:15%;
+  text-align: left;
+  overflow: auto;
+  height: 50%;
+  width: 70%;
+}
 
 #portfolio-left {
   float: left;
@@ -188,7 +202,7 @@ header p {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #DCE7F1;
+  background-color: #e9e6f7;
   position: relative;
 }
 
@@ -207,11 +221,9 @@ header p {
   height:100%;
   width: 50%;
   vertical-align: middle;
-  background-color:#EBEBE6;
-  background-image: url("../images/walk-dark.png");
-  background-size: cover;
-  background-position: center;
+  position: relative;
 }
+
 
 #experience-left {
   float: left;
@@ -219,7 +231,7 @@ header p {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #00C5B3;
+  background-color: rgba(0,0,0,0.2);
   position: relative;
 }
 
@@ -238,11 +250,19 @@ header p {
   height:100%;
   width: 50%;
   vertical-align: middle;
-  background-image: url("../images/footprint-dark.png");
-  background-size: cover;
-  background-position: center;
+  background-color: #FFF;
+  position: relative;
 }
 
+#experience-right p{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  text-align: left;
+  overflow: auto;
+  height: 80%;
+  width: 70%;
+}
 
 #contact-left {
   float: left;
@@ -250,7 +270,7 @@ header p {
   width: 50%;
   vertical-align: middle;
   text-align: center;
-  background-color: #FBF906;
+  background-color: #F3D9DF;
   position: relative;
 }
 
@@ -274,8 +294,6 @@ header p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/palmtrees-dark.png");
-  background-size: cover;
 }
 
 
