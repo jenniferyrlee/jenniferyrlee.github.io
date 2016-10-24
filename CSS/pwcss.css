@@ -24,18 +24,19 @@ html {
 html,body{ margin:0; padding:0; height:100%; width:100%; }
 
 
-header h1 {
+#hellotext {
   font-size: 80px;
   font-weight: normal;
   color: #2F2F2F;
+  margin-top: 5%;
+  margin-bottom:5%;
 }
 
 header p {
   color: #2F2F2F;
   line-height: 1.5;
-
+  margin: 0;
 }
-
 
 
 #mainscreen {
@@ -100,8 +101,6 @@ header p {
     width: 100%;
     background: #F7CCD6;
     text-decoration:none;
- /*    text-shadow: 2px 2px 5px #FFF;
-     cursor:pointer;*/
 }
 
 /*end navigatin bar*/
@@ -115,7 +114,7 @@ header p {
   display: block;
   position: absolute;
   bottom: 0;
-  left:25%;
+  text-align: center;
   }
 
 
@@ -179,21 +178,21 @@ header p {
 }
 
 #myprofile {
-  width: 150px;
-  height: 150px;
+  width: 80%;
+  height: 30%;
   position: absolute;
-  top:10%;
-  left:15%;
+  top:5%;
+  left:10%;
 }
 
 #about-me-right p{
   position: absolute;
-  top: 35%;
-  left:15%;
+  top: 40%;
+  left:10%;
   text-align: left;
   overflow: auto;
-  height: 50%;
-  width: 70%;
+  height: 55%;
+  width: 80%;
 }
 
 #portfolio-left {
@@ -294,13 +293,16 @@ header p {
   display: flex;
   align-items: center;
   justify-content: center;
+  position:relative;
 }
+
 
 
 #contact-icons {
   font-size:30px;
-  position: absolute;
-  margin-top: 30px;
+  text-align: center;
+  position:absolute;
+  margin-top: 65px;
 }
 
 
