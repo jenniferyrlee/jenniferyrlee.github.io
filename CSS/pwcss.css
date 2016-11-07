@@ -12,7 +12,7 @@ html {
   color: #2F2F2F; /*#d9d8d6;*/
   font-weight: normal;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   background-image: url("../images/wave.jpg");
   background-color: #DBDED7;
   background-position: bottom;
@@ -43,13 +43,6 @@ header p {
   height:100%;
   width:100%;
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
-  /* if I want to use the wave image only for the main landing page.
-  background-image: url("../images/wave.jpg");
-  background-color: #DBDED7;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;*/
 }
 
 #about-me {
@@ -75,6 +68,20 @@ header p {
   width:100%;
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
 }
+
+
+/*Fixed Nav Bar*/
+
+#fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  background-color: #f9fafc;
+}
+/*End Fixed Nav Bar*/
 
 
 /*navigation bar*/
